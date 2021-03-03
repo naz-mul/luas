@@ -1,0 +1,78 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--  xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--  xmlns:tools="http://schemas.android.com/tools"-->
+<!--  android:layout_width="match_parent"-->
+<!--  android:layout_height="wrap_content">-->
+
+<!--  <TextView-->
+<!--    android:id="@+id/tv_message"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintBottom_toTopOf="@+id/tv_bound"-->
+<!--    tools:text="Green Line services operating normally"-->
+<!--    />-->
+
+<!--  <TextView-->
+<!--    android:id="@+id/tv_bound"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="left"-->
+<!--    style="@style/bound_type"-->
+<!--    app:layout_constraintStart_toStartOf="@id/tv_message"-->
+<!--    app:layout_constraintBottom_toBottomOf="@+id/tv_message"-->
+<!--    tools:text="Inbound"-->
+<!--    />-->
+
+<!--  <TextView-->
+<!--    android:id="@+id/tv_destination"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center"-->
+<!--    style="@style/direction"-->
+<!--    app:layout_constraintStart_toStartOf="@id/tv_bound"-->
+<!--    app:layout_constraintBottom_toBottomOf="@id/tv_bound"-->
+<!--    tools:text="Ranelagh" />-->
+
+<!--  <TextView-->
+<!--    android:id="@+id/tv_duration"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center"-->
+<!--    style="@style/direction"-->
+<!--    app:layout_constraintEnd_toEndOf="@id/tv_bound"-->
+<!--    app:layout_constraintStart_toEndOf="@id/tv_destination"-->
+<!--    app:layout_constraintTop_toTopOf="@id/tv_bound"-->
+<!--    tools:text="DUE" />-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<androidx.cardview.widget.CardView
+  android:id="@+id/card_view"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="40dp"
+  android:layout_gravity="center"
+  android:layout_marginBottom="15dp"
+  android:layout_marginLeft="20dp"
+  android:layout_marginRight="20dp"
+  card_view:cardCornerRadius="20dp"
+  card_view:elevation="28dp">
+
+  <TextView
+    android:id="@+id/tv_destination"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|left"
+    android:layout_marginLeft="18dp"
+    android:textSize="20sp"/>
+
+  <TextView
+    android:id="@+id/tv_duration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|right"
+    android:layout_marginRight="18dp"
+    android:textSize="20sp"/>
+</androidx.cardview.widget.CardView>
